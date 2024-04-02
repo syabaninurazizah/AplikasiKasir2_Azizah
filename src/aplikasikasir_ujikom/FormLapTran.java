@@ -51,28 +51,23 @@ public class FormLapTran extends javax.swing.JFrame {
         tbldataproduk = new javax.swing.JTable();
         jScrollPane4 = new javax.swing.JScrollPane();
         tbllaptransaksi = new javax.swing.JTable();
+        jButton1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        getContentPane().setLayout(null);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel2.setText("Sebelum Tanggal");
-        getContentPane().add(jLabel2);
-        jLabel2.setBounds(140, 120, 100, 16);
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 120, 100, -1));
 
         jLabel3.setText("Diantara Tanggal");
-        getContentPane().add(jLabel3);
-        jLabel3.setBounds(140, 160, 90, 16);
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 90, -1));
 
         jLabel4.setText("Sesudah Tanggal");
-        getContentPane().add(jLabel4);
-        jLabel4.setBounds(140, 210, 89, 16);
-        getContentPane().add(sebelumtgl);
-        sebelumtgl.setBounds(280, 120, 170, 22);
-        getContentPane().add(daritgl);
-        daritgl.setBounds(280, 160, 70, 22);
-        getContentPane().add(setelahtgl);
-        setelahtgl.setBounds(280, 210, 170, 22);
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, -1, -1));
+        getContentPane().add(sebelumtgl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, 170, -1));
+        getContentPane().add(daritgl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 160, 150, -1));
+        getContentPane().add(setelahtgl, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 210, 170, -1));
 
         btncari1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\icons8-search-20.png")); // NOI18N
         btncari1.addActionListener(new java.awt.event.ActionListener() {
@@ -80,8 +75,7 @@ public class FormLapTran extends javax.swing.JFrame {
                 btncari1ActionPerformed(evt);
             }
         });
-        getContentPane().add(btncari1);
-        btncari1.setBounds(660, 110, 26, 27);
+        getContentPane().add(btncari1, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 110, -1, -1));
 
         btncari2.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\icons8-search-20.png")); // NOI18N
         btncari2.addActionListener(new java.awt.event.ActionListener() {
@@ -89,8 +83,7 @@ public class FormLapTran extends javax.swing.JFrame {
                 btncari2ActionPerformed(evt);
             }
         });
-        getContentPane().add(btncari2);
-        btncari2.setBounds(660, 150, 26, 27);
+        getContentPane().add(btncari2, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 150, -1, -1));
 
         btncari3.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Downloads\\icons8-search-20.png")); // NOI18N
         btncari3.addActionListener(new java.awt.event.ActionListener() {
@@ -98,19 +91,15 @@ public class FormLapTran extends javax.swing.JFrame {
                 btncari3ActionPerformed(evt);
             }
         });
-        getContentPane().add(btncari3);
-        btncari3.setBounds(660, 200, 26, 27);
+        getContentPane().add(btncari3, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 200, -1, -1));
 
         jLabel5.setText("s/d");
-        getContentPane().add(jLabel5);
-        jLabel5.setBounds(360, 160, 20, 16);
-        getContentPane().add(sampaitgl);
-        sampaitgl.setBounds(390, 160, 70, 22);
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 160, 20, -1));
+        getContentPane().add(sampaitgl, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 160, 160, -1));
 
         jLabel6.setFont(new java.awt.Font("Sitka Subheading", 1, 36)); // NOI18N
         jLabel6.setText("Laporan Transaksi");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(360, 30, 350, 50);
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 30, 350, 50));
 
         tbldataproduk.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -130,8 +119,7 @@ public class FormLapTran extends javax.swing.JFrame {
         });
         jScrollPane3.setViewportView(tbldataproduk);
 
-        getContentPane().add(jScrollPane3);
-        jScrollPane3.setBounds(490, 290, 500, 160);
+        getContentPane().add(jScrollPane3, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 290, 500, 160));
 
         tbllaptransaksi.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -151,12 +139,18 @@ public class FormLapTran extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(tbllaptransaksi);
 
-        getContentPane().add(jScrollPane4);
-        jScrollPane4.setBounds(10, 290, 452, 160);
+        getContentPane().add(jScrollPane4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 290, -1, 160));
+
+        jButton1.setText("KELUAR");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 200, 75, -1));
 
         jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\user\\Pictures\\Camera Roll\\bg-lap.jpg")); // NOI18N
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 1210, 850);
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1210, 850));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -197,7 +191,7 @@ try {
     SimpleDateFormat format = new SimpleDateFormat("yyy-MM-dd");
     tanggal = format.format(daritgl.getDate());
     tanggal2 = format.format(sampaitgl.getDate());
-    sql = "select * from penjualan where TanggalPenjualan < '"+tanggal+"'";
+    sql = "select * from penjualan where TanggalPenjualan between '"+tanggal+"' and '"+tanggal2+"' ";
     pst = konek.prepareStatement(sql);
     rst = pst.executeQuery();
     tbllaptransaksi.setModel(DbUtils.resultSetToTableModel(rst));
@@ -210,7 +204,7 @@ try {
 try {
     SimpleDateFormat format = new SimpleDateFormat("yyy-MM-dd");
     tanggal = format.format(setelahtgl.getDate());
-    sql = "select * from penjualan where TanggalPenjualan < '"+tanggal+"'";
+    sql = "select * from penjualan where TanggalPenjualan > '"+tanggal+"'";
     pst = konek.prepareStatement(sql);
     rst = pst.executeQuery();
     tbllaptransaksi.setModel(DbUtils.resultSetToTableModel(rst));
@@ -218,6 +212,10 @@ try {
     JOptionPane.showMessageDialog(null, "Data Tidak Tampil");
 }        // TODO add your handling code here:
     }//GEN-LAST:event_btncari3ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+this.dispose();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -259,6 +257,7 @@ try {
     private javax.swing.JButton btncari2;
     private javax.swing.JButton btncari3;
     private com.toedter.calendar.JDateChooser daritgl;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

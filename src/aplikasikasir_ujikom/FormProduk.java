@@ -267,7 +267,6 @@ if (rst.next()) {
     }//GEN-LAST:event_tblprodukMouseClicked
 
     private void btnkeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnkeluarActionPerformed
-new MenuUtama().setVisible(true); 
 this.dispose();
     }//GEN-LAST:event_btnkeluarActionPerformed
 

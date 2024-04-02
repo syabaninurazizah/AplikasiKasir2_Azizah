@@ -226,6 +226,11 @@ ResultSet rst;
 
         btnbatal.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         btnbatal.setText("BATAL");
+        btnbatal.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbatalActionPerformed(evt);
+            }
+        });
 
         jButton6.setFont(new java.awt.Font("Segoe UI Black", 0, 12)); // NOI18N
         jButton6.setText("LOGIN");
@@ -410,6 +415,11 @@ ResultSet rst;
                 jMenuItem1MouseClicked(evt);
             }
         });
+        jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem1ActionPerformed(evt);
+            }
+        });
         tentang.add(jMenuItem1);
 
         jMenuBar1.add(tentang);
@@ -518,8 +528,16 @@ new FormLapTran().setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_rekaplapActionPerformed
 
     private void jMenuItem1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jMenuItem1MouseClicked
-new FormAbout().setVisible(true);        // TODO add your handling code here:
+        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem1MouseClicked
+
+    private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
+new FormAbout().setVisible(true);        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem1ActionPerformed
+
+    private void btnbatalActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbatalActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnbatalActionPerformed
 
     /**
      * @param args the command line arguments
